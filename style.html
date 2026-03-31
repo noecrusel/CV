@@ -1,0 +1,22 @@
+<style>
+  body {
+    background-color: #e0e0e0; /* grey background to contrast the "page" */
+  }
+
+  .page-wrap {
+    width: 210mm;          /* A4 width */
+    min-height: 297mm;     /* A4 height */
+    padding: 25mm;         /* approximate Word margins */
+    margin: 20px auto;     /* centers the block horizontally */
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  @media print {
+    body { background: none; }
+    .page-wrap {
+      width: 100%; margin: 0; padding: 0;
+      box-shadow: none;
+    }
+  }
+</style>
